@@ -47,3 +47,30 @@ int main(int argc, char* argv[]) {
     compress_process(A, B);
     compress_print(B);
 }
+
+/*
+請寫一個void compress_process(int a[][a_columns], int b[][b_columns])的副程式，可以對矩陣a進行「稀疏矩陣轉換」，並將轉換後的結果儲存至矩陣b。再寫void compress_print(int b[][b_columns])的副程式，輸出矩陣b的結果。
+
+矩陣a範例：
+5 0 0
+0 0 -1
+3 0 0
+0 9 10
+
+轉換後的矩陣b：
+4 3 5
+0 0 5
+1 2 -1
+2 0 3
+3 1 9
+3 2 10
+
+輸出範例：
+4 3 5 0 0 5 1 2 -1 2 0 3 3 1 9 3 2 10
+
+
+
+系統輸入：12個int型態的數值（4*3的矩陣）
+
+結果輸出：int型態的數值（依照矩陣a決定數量）
+*/
